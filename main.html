@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+  <title>
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" type ="text/css" href ="style.css"/>
+ </head>
+
+ <body>
+
+  <img id = "background" src = "background.jpg" style ="width:1325px; height:625px;">
+  <img id = "header"     src = "header.png" style ="width:400px;">
+  <img id = "kingdice"   src = "kingdice_idle.png" style ="height:300px;">
+  <img id = "cuphead"    src = "cuphead_idle.gif" style ="height:125px;">
+
+  <div id = "animation_static1">
+  </div>
+  <div id = "animation_static2">
+  </div>
+  <div id = "animation_static3">
+  </div>
+  <div id = "animation_static4">
+  </div>
+  <div id = "animation_static5">
+  </div>
+
+  <button id = "chance" onclick="game.chance()">
+   <img id = "coin" src = "Coin.png" style ="height:30px; width:30px;">
+  </button>
+
+  <p id ="chance_results"></p>
+
+  <div id = "clock_stem">
+  </div>
+  <div id = "clock_skin">
+  </div>
+  <div id = "clock_face">
+   <p id = "clock_time"></p>
+   <p id = "clock_over"></p>
+  </div>
+  <div id = "clock_top">
+  </div>
+
+   <h1 id = "WORD">______</h1>
+
+
+
+
+  <div id = "letters">
+   <a id = "a">A</a>
+   <a id = "b">B</a>
+   <a id = "c">C</a>
+   <a id = "d">D</a>
+   <a id = "e">E</a>
+   <a id = "f">F</a>
+   <a id = "g">G</a>
+   <a id = "h">H</a>
+   <a id = "i">I</a>
+   <a id = "j">J</a>
+   <a id = "k">K</a>
+   <a id = "l">L</a>
+   <a id = "m">M</a>
+   <a id = "n">N</a>
+   <a id = "o">O</a>
+   <a id = "p">P</a>
+   <a id = "q">Q</a>
+   <a id = "r">R</a>
+   <a id = "s">S</a>
+   <a id = "t">T</a>
+   <a id = "u">U</a>
+   <a id = "v">V</a>
+   <a id = "w">W</a>
+   <a id = "x">X</a>
+   <a id = "y">Y</a>
+   <a id = "z">Z</a>
+  </div>
+
+
+
+  <script type ="text/javascript" src ="Jquerry.min.js"></script>
+  <script type ="text/javascript" src ="wordbank.js"></script>
+  <script type ="text/javascript" src ="main.js"></script>
+  <script type ="text/javascript" src ="clickLetter.js"></script>
+  <script type ="text/javascript" src ="timer.js"></script>
+
+ </body>
+</html>
