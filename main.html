@@ -12,23 +12,23 @@
   <link rel="stylesheet" type ="text/css" href ="style.css"/>
  </head>
 
- <body>
+ <body onload = "audio()">
 
-  <img id = "background" src = "background.jpg" style ="width:1325px; height:625px;">
+  <img id = "background" src = "background.jpg" style ="width:1350px; height:600px;">
   <img id = "header"     src = "header.png" style ="width:400px;">
   <img id = "kingdice"   src = "kingdice_idle.png" style ="height:300px;">
   <img id = "cuphead"    src = "cuphead_idle.gif" style ="height:125px;">
 
-  <div id = "animation_static1">
+  <div id = "line_static">
   </div>
-  <div id = "animation_static2">
+  <div id = "line_static2">
   </div>
-  <div id = "animation_static3">
-  </div>
-  <div id = "animation_static4">
-  </div>
-  <div id = "animation_static5">
-  </div>
+
+  <img id = "splat" src = "splatter.png" style ="height:25px;">
+  <img id = "splat2" src = "splatter2.png" style ="height:50px;">
+  <img id = "splat3" src = "splatter3.png" style ="height:35px;">
+  <img id = "stroke" src = "stroke_grey.png" style ="height:25px;">
+  <img id = "stroke2" src = "stroke_lightgrey.png" style ="height:35px;">
 
   <button id = "chance" onclick="game.chance()">
    <img id = "coin" src = "Coin.png" style ="height:30px; width:30px;">
@@ -82,7 +82,8 @@
   </div>
 
 
-
+  <script type ="text/javascript" src ="audio.js"></script>
+  <script type ="text/javascript" src ="animation.js"></script>
   <script type ="text/javascript" src ="Jquerry.min.js"></script>
   <script type ="text/javascript" src ="wordbank.js"></script>
   <script type ="text/javascript" src ="main.js"></script>

@@ -1,3 +1,9 @@
+#background
+{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
 #header
 {
   top: 25px;
@@ -15,6 +21,63 @@
 {
   top: 400px;
   left: 250px;
+  position: absolute;
+}
+#line_static
+{
+  background-color: lightgrey;
+  height: 595px;
+  width: 2px;
+  top: 0px;
+  left: 20px;
+  opacity: 0.1;
+  position: absolute;
+}
+#line_static2
+{
+  background-color: lightgrey;
+  height: 595px;
+  width: 2px;
+  top: 0px;
+  left: 100px;
+  opacity: 0.1;
+  position: absolute;
+}
+#splat
+{
+  top: 15px;
+  left: 100px;
+  opacity: .25;
+  rotation: 180deg;
+  position: absolute;
+}
+#splat2
+{
+  top: 15px;
+  left: 100px;
+  opacity: .25;
+  rotation: 180deg;
+  position: absolute;
+}
+#splat3
+{
+  top: 15px;
+  left: 100px;
+  opacity: .75;
+  position: absolute;
+}
+#stroke
+{
+  top: 15px;
+  left: 100px;
+  opacity: .25;
+  position: absolute;
+}
+#stroke2
+{
+  top: 15px;
+  left: 100px;
+  opacity: .75;
   position: absolute;
 }
 #coin
@@ -104,7 +167,7 @@
 {
   height: 150px;
   width: 350px;
-  top: 470px;
+  top: 435px;
   left: 500px;
   margin: 10px;
   position: absolute;
@@ -141,7 +204,7 @@
 {
   color: #ffffff;
   font-size: 75px;
-  top: 300px;
+  top: 275px;
   left: 500px;
   position: absolute;
   font-family: 'Indie Flower', cursive;

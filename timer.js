@@ -29,6 +29,8 @@ var game =
      document.getElementById("clock_over").innerHTML = "GameOver";
      document.getElementById("clock_time").style.visibility = "hidden";
      document.getElementById("clock_over").style.visibility = "visible";
+     alert("your out of time: loading a new word");
+     window.location.reload();
    }
  }, chance_text : function()
  {
