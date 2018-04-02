@@ -1,5 +1,5 @@
-var time = setInterval("game.timer()", 1000);
-var countDownDate = new Date().getTime() + 60000;
+
+  var countDownDate = new Date().getTime() + 64000;
 
 
 var game =
@@ -29,7 +29,7 @@ var game =
      document.getElementById("clock_over").innerHTML = "GameOver";
      document.getElementById("clock_time").style.visibility = "hidden";
      document.getElementById("clock_over").style.visibility = "visible";
-     alert("your out of time: loading a new word");
+     alert("your out of time! Your word was "+main.word+": loading a new word");
      window.location.reload();
    }
  }, chance_text : function()

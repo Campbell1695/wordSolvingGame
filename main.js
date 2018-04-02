@@ -29,14 +29,19 @@ main.setUnderline = function()
 
 main.updateLetter = function(letter)
 {
-  main.changes = 0;
+var x = 0;
   for(i = 0; i<main.word.length; i++){
     main.wordArray[i] = main.word.charAt(i)
     if(main.word.charAt(i) == letter){
       main.wordUArray[i] = letter;
+      x = 1;
+    }
+    if(x == 0){
+      damage();
+      x--;
     }
   }
-  
+
   main.wordU = main.wordUArray.join("");
   document.getElementById("WORD").innerHTML = main.wordU;
 
@@ -48,11 +53,6 @@ main.updateLetter = function(letter)
     window.location.reload();
   }
 
-  if(main.lives < 1){
-    document.getElementById("WORD").innerHTML == main.word1;
-    alert("you have run out of lives. Please try again");
-    window.location.reload();
-  }
 }
 main.pullword();
 main.setUnderline();
