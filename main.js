@@ -18,7 +18,7 @@ main.pullword = function()
 main.setUnderline = function()
 {
   main.pullword();
-  for(i=0; i<main.word.length; i++)
+  for(i = 0; i < main.word.length; i++)
   {
     main.wordArray[i] = main.word.charAt(i);
     main.wordUArray[i] = "_";

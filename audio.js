@@ -12,6 +12,7 @@ audio = function()
     currentSong++;
     song.src = source[currentSong];
     song.play();
+    var interval = setInterval( "increment()", 1000);
     var time = setInterval("game.timer()", 1000);
   }
 }
