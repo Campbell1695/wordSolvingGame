@@ -1,12 +1,12 @@
 words = {};
 words.List = [];
 
-words.List[0] = "cat";
-words.List[1] = "lion";
-words.List[2] = "puma";
-words.List[3] = "tiger";
-words.List[4] = "leopord";
-words.List[5] = "cheetah";
+words.List[0] = "cuphead";
+words.List[1] = "mugman";
+words.List[2] = "kingdice";
+words.List[3] = "devil";
+words.List[4] = "beppi";
+words.List[5] = "elderkettle";
 words.List[6] = "panther";
 words.List[7] = "lynx";
 words.List[8] = "jaguar";

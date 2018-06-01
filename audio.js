@@ -14,6 +14,7 @@ audio = function()
     song.play();
     var interval = setInterval( "increment()", 1000);
     var time = setInterval("game.timer()", 1000);
+    //make div disappear when pressed
   }
 }
 

@@ -33,7 +33,7 @@ var game =
  }, chance : function()
  {
    var x = Math.floor((Math.random() * 10) + 1);
-
+   console.log(i);
    document.getElementById("chance").style.visibility = "hidden";
 
    setTimeout(game.chance_wait, 10000);
@@ -43,7 +43,7 @@ var game =
      document.getElementById("chance_results").style.visibility = "visible";
      document.getElementById("chance_results").style.color = "green";
      document.getElementById("chance_results").innerHTML="+10";
-     distance = distance + 10;
+     i = i + 10;
      setTimeout(game.chance_text, 3000);
 
    }if(x==2)
@@ -51,7 +51,7 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "green";
     document.getElementById("chance_results").innerHTML="+7";
-    distance = distance + 7;
+    i = i + 7;
     setTimeout(game.chance_text, 3000);
    }
    if(x==3)
@@ -59,14 +59,14 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "green";
     document.getElementById("chance_results").innerHTML="+5";
-    distance = distance + 5;
+    i = i + 5;
     setTimeout(game.chance_text, 3000);
    }if(x==4)
    {
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "green";
     document.getElementById("chance_results").innerHTML="+3";
-    distance = distance + 3;
+    i = i + 3;
     setTimeout(game.chance_text, 3000);
    }
    if(x==5)
@@ -94,7 +94,7 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "red";
     document.getElementById("chance_results").innerHTML="-3";
-    distance = distance - 3;
+    i = i - 3;
     setTimeout(game.chance_text, 3000);
    }
    if(x==9)
@@ -102,14 +102,14 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "red";
     document.getElementById("chance_results").innerHTML="-5";
-    distance = distance - 5;
+    i = i - 5;
     setTimeout(game.chance_text, 3000);
    }if(x==10)
    {
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "red";
     document.getElementById("chance_results").innerHTML="-7";
-    distance = distance - 7;
+    i = i - 7;
     setTimeout(game.chance_text, 3000);
    }
  }
