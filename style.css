@@ -3,6 +3,24 @@
   position: absolute;
   top: 250px;
   left: 250px;
+  font-family: 'Crafty Girls', cursive;
+}
+#howTo
+{
+  position: absolute;
+  top: -120px;
+  left: 55px;
+  font-size: 75px;
+}
+#howToWords
+{
+  position: absolute;
+  top: 20px;
+  left: 215px;
+  width: 410px;
+  height: 275px;
+  text-align: center;
+  font-size: 18px;
 }
 #background
 {
@@ -90,6 +108,12 @@
 {
   top: 0px;
   left: 0px;
+  position: absolute;
+}
+#scroll
+{
+  top: -155px;
+  left: 100px;
   position: absolute;
 }
 #chance

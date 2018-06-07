@@ -1,16 +1,16 @@
-var i = 60;
+var a = 60;
 
 
 
 function increment(){
-    i = i % 360 - 1;
+    a = a % 360 - 1;
 }
 
 var game =
 {
  timer : function()
  {
-   var distance = i;
+   var distance = a;
 
    if (distance > 0)
    {
@@ -33,17 +33,16 @@ var game =
  }, chance : function()
  {
    var x = Math.floor((Math.random() * 10) + 1);
-   console.log(i);
    document.getElementById("chance").style.visibility = "hidden";
 
-   setTimeout(game.chance_wait, 10000);
+   setTimeout(game.chance_wait, 7000);
 
    if(x==1)
    {
      document.getElementById("chance_results").style.visibility = "visible";
      document.getElementById("chance_results").style.color = "green";
      document.getElementById("chance_results").innerHTML="+10";
-     i = i + 10;
+     a = a + 10;
      setTimeout(game.chance_text, 3000);
 
    }if(x==2)
@@ -51,7 +50,7 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "green";
     document.getElementById("chance_results").innerHTML="+7";
-    i = i + 7;
+    a = a + 7;
     setTimeout(game.chance_text, 3000);
    }
    if(x==3)
@@ -59,33 +58,39 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "green";
     document.getElementById("chance_results").innerHTML="+5";
-    i = i + 5;
+    a = a + 5;
     setTimeout(game.chance_text, 3000);
    }if(x==4)
    {
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "green";
     document.getElementById("chance_results").innerHTML="+3";
-    i = i + 3;
+    a = a + 3;
     setTimeout(game.chance_text, 3000);
    }
    if(x==5)
    {
      document.getElementById("chance_results").style.visibility = "visible";
-     document.getElementById("chance_results").innerHTML="hint 1";
+     document.getElementById("chance_results").style.color = "green";
+     document.getElementById("chance_results").innerHTML="+1";
+     a = a + 1;
     // hint one set to visible
     setTimeout(game.chance_text, 3000);
    }if(x==6)
    {
     document.getElementById("chance_results").style.visibility = "visible";
-    document.getElementById("chance_results").innerHTML="hint 2";
+    document.getElementById("chance_results").style.color = "red";
+    document.getElementById("chance_results").innerHTML="-10";
+    a = a - 10;
    // hint two set to visible
    setTimeout(game.chance_text, 3000);
    }
    if(x==7)
    {
      document.getElementById("chance_results").style.visibility = "visible";
-     document.getElementById("chance_results").innerHTML="Free Letter";
+     document.getElementById("chance_results").style.color = "red";
+     document.getElementById("chance_results").innerHTML="-1";
+     a = a - 1;
      // show one Letter
     // may require series of if/else statements
     setTimeout(game.chance_text, 3000);
@@ -94,7 +99,7 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "red";
     document.getElementById("chance_results").innerHTML="-3";
-    i = i - 3;
+    a = a - 3;
     setTimeout(game.chance_text, 3000);
    }
    if(x==9)
@@ -102,14 +107,14 @@ var game =
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "red";
     document.getElementById("chance_results").innerHTML="-5";
-    i = i - 5;
+    a = a - 5;
     setTimeout(game.chance_text, 3000);
    }if(x==10)
    {
     document.getElementById("chance_results").style.visibility = "visible";
     document.getElementById("chance_results").style.color = "red";
     document.getElementById("chance_results").innerHTML="-7";
-    i = i - 7;
+    a = a - 7;
     setTimeout(game.chance_text, 3000);
    }
  }

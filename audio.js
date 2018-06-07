@@ -9,6 +9,7 @@ audio = function()
   song.play();
   song.onended = function()
   {
+    document.getElementById("something").style.visibility = "hidden";
     currentSong++;
     song.src = source[currentSong];
     song.play();
