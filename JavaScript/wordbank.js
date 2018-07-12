@@ -12,5 +12,4 @@ words.List[7] = "lynx";
 words.List[8] = "jaguar";
 words.List[9] = "liger";
 
-
 words.length = words.List.length;

@@ -1,203 +1,232 @@
-$(function(){
-	$("#a").click(function(event) {
+$(function()
+{
+	$("#a").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("a");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#b").click(function(event) {
+$(function()
+{
+	$("#b").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("b");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#c").click(function(event) {
+$(function()
+{
+	$("#c").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("c");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#d").click(function(event) {
+$(function()
+{
+	$("#d").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("d");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#e").click(function(event) {
+$(function()
+{
+	$("#e").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("e");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#f").click(function(event) {
+$(function()
+{
+	$("#f").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("f");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#g").click(function(event) {
+$(function()
+{
+	$("#g").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("g");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#h").click(function(event) {
+$(function()
+{
+	$("#h").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("h");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#i").click(function(event) {
+$(function()
+{
+	$("#i").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("i");
 	});
-	}
-);
+});
 
 $(function(){
-	$("#j").click(function(event) {
+	$("#j").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("j");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#k").click(function(event) {
+$(function()
+{
+	$("#k").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("k");
 	});
-	}
-);$(function(){
-	$("#l").click(function(event) {
+});
+
+$(function()
+{
+	$("#l").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("l");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#m").click(function(event) {
+$(function()
+{
+	$("#m").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("m");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#n").click(function(event) {
+$(function()
+{
+	$("#n").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("n");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#o").click(function(event) {
+$(function()
+{
+	$("#o").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("o");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#p").click(function(event) {
+$(function()
+{
+	$("#p").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("p");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#q").click(function(event) {
+$(function()
+{
+	$("#q").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("q");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#r").click(function(event) {
+$(function()
+{
+	$("#r").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("r");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#s").click(function(event) {
+$(function()
+{
+	$("#s").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("s");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#t").click(function(event) {
+$(function()
+{
+	$("#t").click(function(event)
+	{
 			event.preventDefault();
 	   	main.updateLetter("t");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#u").click(function(event) {
+$(function()
+{
+	$("#u").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("u");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#v").click(function(event) {
+$(function()
+{
+	$("#v").click(function(event)
+	{
 			event.preventDefault();
 	  	main.updateLetter("v");
 	});
-	}
-);$(function(){
-	$("#w").click(function(event) {
+});
+
+$(function()
+{
+	$("#w").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("w");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#x").click(function(event) {
+$(function()
+{
+	$("#x").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("x");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#y").click(function(event) {
+$(function()
+{
+	$("#y").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("y");
 	});
-	}
-);
+});
 
-$(function(){
-	$("#z").click(function(event) {
+$(function()
+{
+	$("#z").click(function(event)
+	{
 			event.preventDefault();
 			main.updateLetter("z");
 	});
-	}
-);
+});

@@ -2,13 +2,10 @@ main = {};
 main.wordArray = [];
 main.wordUArray = [];
 
-
 main.numInWordBank = words.length;
 
 main.word = "test";
 main.wordU = "";
-
-//functions start There
 
 main.pullword = function()
 {
@@ -29,14 +26,17 @@ main.setUnderline = function()
 
 main.updateLetter = function(letter)
 {
-var x = 0;
-  for(i = 0; i<main.word.length; i++){
+  var x = 0;
+  for(i = 0; i<main.word.length; i++)
+  {
     main.wordArray[i] = main.word.charAt(i)
-    if(main.word.charAt(i) == letter){
+    if(main.word.charAt(i) == letter)
+    {
       main.wordUArray[i] = letter;
       x = 1;
     }
-    if(x == 0){
+    if(x == 0)
+    {
       damage();
       x--;
     }
@@ -48,11 +48,12 @@ var x = 0;
   main.word1 = main.wordArray.join("");
   main.word2 = main.wordUArray.join("");
 
-  if(main.word1 == main.word2){
+  if(main.word1 == main.word2)
+  {
     alert("you won: loading a new word");
     window.location.reload();
   }
-
 }
+
 main.pullword();
 main.setUnderline();
