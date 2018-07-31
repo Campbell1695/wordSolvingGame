@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cuphead || Word Solve</title>
 
     <link href="https://fonts.googleapis.com/css?family=Crafty+Girls" rel="stylesheet">
@@ -9,78 +10,82 @@
     <link rel="stylesheet" type ="text/css" href ="style.css"/>
   </head>
   <body>
-    <img id="background" src="images/background.jpg" style ="width:1350px; height:600px;">
-    <img id="header" src="images/header.png" style ="width:400px;">
-    <img id="kingdice" src="images/kingdice_idle.png" style ="height:300px;">
-    <img id="cuphead"  src="images/cuphead_idle.gif" style ="height:125px;">
+    <div class="container">
+      <img id="background" src="images/background.jpg" style ="width:100%; height:600px;">
+      <img id="header" src="images/header.png">
+      <img id="kingdice" src="images/kingdice_idle.png">
+      <img id="cuphead"  src="images/cuphead_idle.gif">
 
-    <div id="line_static">
-    </div>
-    <div id="line_static2">
-    </div>
+      <div id="line_static">
+      </div>
+      <div id="line_static2">
+      </div>
 
-    <img id="splat" src="images/splatter.png" style ="height:25px;">
-    <img id="splat2" src="images/splatter2.png" style ="height:50px;">
-    <img id="splat3" src="images/splatter3.png" style ="height:35px;">
-    <img id="stroke" src="images/stroke_grey.png" style ="height:25px;">
-    <img id="stroke2" src="images/stroke_lightgrey.png" style ="height:35px;">
+      <img id="splat" src="images/splatter.png" style ="height:25px;">
+      <img id="splat2" src="images/splatter2.png" style ="height:50px;">
+      <img id="splat3" src="images/splatter3.png" style ="height:35px;">
+      <img id="stroke" src="images/stroke_grey.png" style ="height:25px;">
+      <img id="stroke2" src="images/stroke_lightgrey.png" style ="height:35px;">
 
-    <button id="chance" onclick="game.chance()">
-      <img id="coin" src = "images/Coin.png" style ="height:30px; width:30px;">
-    </button>
+      <button id="chance" onclick="game.chance()">
+        <img id="coin" src = "images/Coin.png">
+      </button>
 
-    <p id="chance_results"></p>
+      <!--didnt add-->
+      <p id="chance_results"></p>
+      <!--didnt add-->
 
-    <div id="clock_stem">
-    </div>
-    <div id="clock_skin">
-    </div>
-    <div id="clock_face">
-      <p id="clock_time"></p>
-      <p id="clock_over"></p>
-    </div>
-    <div id="clock_top">
-    </div>
+      <div id="clock_stem">
+      </div>
+      <div id="clock_skin">
+      </div>
+      <div id="clock_face">
+        <p id="clock_time"></p>
+        <p id="clock_over"></p>
+      </div>
+      <div id="clock_top">
+      </div>
 
-    <h1 id="WORD">______</h1>
+      <h1 id="WORD">______</h1>
 
-    <div id="letters">
-      <a id="a">A</a>
-      <a id="b">B</a>
-      <a id="c">C</a>
-      <a id="d">D</a>
-      <a id="e">E</a>
-      <a id="f">F</a>
-      <a id="g">G</a>
-      <a id="h">H</a>
-      <a id="i">I</a>
-      <a id="j">J</a>
-      <a id="k">K</a>
-      <a id="l">L</a>
-      <a id="m">M</a>
-      <a id="n">N</a>
-      <a id="o">O</a>
-      <a id="p">P</a>
-      <a id="q">Q</a>
-      <a id="r">R</a>
-      <a id="s">S</a>
-      <a id="t">T</a>
-      <a id="u">U</a>
-      <a id="v">V</a>
-      <a id="w">W</a>
-      <a id="x">X</a>
-      <a id="y">Y</a>
-      <a id="z">Z</a>
-    </div>
+      <div id="letters">
+        <a id="a">A</a>
+        <a id="b">B</a>
+        <a id="c">C</a>
+        <a id="d">D</a>
+        <a id="e">E</a>
+        <a id="f">F</a>
+        <a id="g">G</a>
+        <a id="h">H</a>
+        <a id="i">I</a>
+        <a id="j">J</a>
+        <a id="k">K</a>
+        <a id="l">L</a>
+        <a id="m">M</a>
+        <a id="n">N</a>
+        <a id="o">O</a>
+        <a id="p">P</a>
+        <a id="q">Q</a>
+        <a id="r">R</a>
+        <a id="s">S</a>
+        <a id="t">T</a>
+        <a id="u">U</a>
+        <a id="v">V</a>
+        <a id="w">W</a>
+        <a id="x">X</a>
+        <a id="y">Y</a>
+        <a id="z">Z</a>
+      </div>
 
-    <div id="something">
-      <img id="scroll" src="images/scroll.png" style= "height:550px; width:650px;">
-      <div id="howToWords">
-        <h1 id="howTo">How To</h1>
-        <p>Beat the sixty second clock by guessing the word below</p>
-        <p>Use the coin for a chance for more time.</p>
-        <p>Beware! The coin may also take away time. It also has a seven second cooldown</p>
-        <button onclick="audio()">Begin</button>
+      <div id="scroll_container">
+        <img id="scroll" src="images/scroll.png">
+        <div id="howToWords">
+          <h1 id="howTo">How To</h1>
+          <p>Beat the sixty second clock by guessing the word below</p>
+          <p>Use the coin for a chance for more time.</p>
+          <p>Beware! The coin may also take away time. It also has a seven second cooldown</p>
+          <button onclick="audio()">Begin</button>
+        </div>
       </div>
     </div>
 

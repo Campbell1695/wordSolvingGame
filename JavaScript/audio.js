@@ -7,10 +7,10 @@ audio = function()
 {
   song.src = source[currentSong];
   song.play();
-  
+
   song.onended = function()
   {
-    document.getElementById("something").style.visibility = "hidden";
+    document.getElementById("scroll_container").style.visibility = "hidden";
     currentSong++;
 
     song.src = source[currentSong];

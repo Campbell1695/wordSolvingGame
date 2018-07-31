@@ -2,40 +2,40 @@ var x = setInterval(animate,200);
 
 function animate()
 {
-  var left_line = Math.floor((Math.random()*1300)+15);
-  left_line = left_line +"px";
+  var left_line = Math.floor((Math.random()*90)+10);
+  left_line = left_line +"%";
   var opacity_line = Math.floor((Math.random()*5)+1);
   opacity_line = opacity_line/10;
 
-  var left_line2 = Math.floor((Math.random()*1300)+15);
-  left_line2 = left_line2 +"px";
+  var left_line2 = Math.floor((Math.random()*90)+10);
+  left_line2 = left_line2 +"%";
   var opacity_line2 = Math.floor((Math.random()*5)+1);
   opacity_line2 = opacity_line2/10;
 
-  var top_splat = Math.floor((Math.random()*550)+15);
-  top_splat = top_splat +"px";
-  var left_splat = Math.floor((Math.random()*1300)+15);
-  left_splat = left_splat +"px";
+  var top_splat = Math.floor((Math.random()*75)+10);
+  top_splat = top_splat +"%";
+  var left_splat = Math.floor((Math.random()*85)+10);
+  left_splat = left_splat +"%";
 
-  var top_splat2 = Math.floor((Math.random()*550)+15);
-  top_splat2 = top_splat2 +"px";
-  var left_splat2 = Math.floor((Math.random()*1300)+15);
-  left_splat2 = left_splat2 +"px";
+  var top_splat2 = Math.floor((Math.random()*75)+10);
+  top_splat2 = top_splat2 +"%";
+  var left_splat2 = Math.floor((Math.random()*85)+10);
+  left_splat2 = left_splat2 +"%";
 
-  var top_splat3 = Math.floor((Math.random()*550)+15);
-  top_splat3 = top_splat3 +"px";
-  var left_splat3 = Math.floor((Math.random()*1300)+15);
-  left_splat3 = left_splat3 +"px";
+  var top_splat3 = Math.floor((Math.random()*75)+10);
+  top_splat3 = top_splat3 +"%";
+  var left_splat3 = Math.floor((Math.random()*85)+10);
+  left_splat3 = left_splat3 +"%";
 
-  var top_stroke = Math.floor((Math.random()*550)+15);
-  top_stroke = top_stroke +"px";
-  var left_stroke = Math.floor((Math.random()*1300)+15);
-  left_stroke = left_stroke +"px";
+  var top_stroke = Math.floor((Math.random()*75)+10);
+  top_stroke = top_stroke +"%";
+  var left_stroke = Math.floor((Math.random()*85)+10);
+  left_stroke = left_stroke +"%";
 
-  var top_stroke2 = Math.floor((Math.random()*550)+15);
-  top_stroke2 = top_stroke2 +"px";
-  var left_stroke2 = Math.floor((Math.random()*1300)+15);
-  left_stroke2 = left_stroke2 +"px";
+  var top_stroke2 = Math.floor((Math.random()*75)+10);
+  top_stroke2 = top_stroke2 +"%";
+  var left_stroke2 = Math.floor((Math.random()*85)+10);
+  left_stroke2 = left_stroke2 +"%";
 
   document.getElementById("line_static").style.left = left_line;
   document.getElementById("line_static").style.opacity = opacity_line;

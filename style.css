@@ -1,72 +1,452 @@
-#something
+.container
 {
-  position: absolute;
-  top: 250px;
-  left: 250px;
-  font-family: 'Crafty Girls', cursive;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
 }
-#howTo
-{
-  position: absolute;
-  top: -120px;
-  left: 55px;
-  font-size: 75px;
-}
-#howToWords
-{
-  position: absolute;
-  top: 20px;
-  left: 215px;
-  width: 410px;
-  height: 275px;
-  text-align: center;
-  font-size: 18px;
-}
+
 #background
 {
+  left: 0px;
   top: 0px;
+  position: absolute;
+}
+#chance
+{
+  background-color: #f7d847;
+  border: 3px solid #867531;
+  border-radius: 45px;
+  cursor: pointer;
+  height: 35px;
+  left: 25%;
+  position: absolute;
+  top: 74%;
+  width: 35px;
+}
+#chance:hover
+{
+  background-color: #867531;
+}
+#clock_over
+{
+  visibility: hidden;
+}
+#clock_face
+{
+   background-color: #ac946f;
+   border-radius: 50%;
+   border: 4px solid black;
+   font-family: 'Press Start 2P', cursive;
+   height: 16%;
+   left: 87.25%;
+   position: absolute;
+   top: 10%;
+   width: 7%;
+}
+#clock_skin
+{
+   background-color: #8f4c2f;
+   border-radius: 50%;
+   border: 3px solid black;
+   height: 20%;
+   left: 86.25%;
+   position: absolute;
+   top: 8.2%;
+   width: 9%;
+}
+#clock_stem
+{
+   background-color: #8f4c2f;
+   border: 2px solid black;
+   border-radius: 25px;
+   height: 5%;
+   left: 90%;
+   position: absolute;
+   top: 4%;
+   width: 1.5%;
+}
+#clock_time
+{
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  left: 16%;
+  position: absolute;
+  top: 8%;
+}
+#clock_top
+{
+   background-color: #f2d551;
+   border-radius: 35px 35px 25px 25px;
+   border: 2px solid black;
+   height: 1.5%;
+   left: 89%;
+   position: absolute;
+   top: 4%;
+   width: 3.5%;
+}
+#coin
+{
+  height: 30px;
   left: 0px;
   position: absolute;
-}
-#header
-{
-  top: 25px;
-  left: 375px;
-  position: absolute;
-  border-radius: 30px;
-}
-#kingdice
-{
-  top: 225px;
-  left: 950px;
-  position: absolute;
+  top: 0px;
+  width: 30px;
 }
 #cuphead
 {
-  top: 400px;
-  left: 250px;
+  height: 20%;
+  left: 18%;
   position: absolute;
+  top: 60%;
+}
+#header
+{
+  left: 27%;
+  position: absolute;
+  top: 4%;
+  width: 30%;
+}
+#howTo
+{
+  font-size: 60px;
+  width: 100%;
+}
+#howToWords
+{
+  font-size: 16px;
+  height: 60%;
+  position: absolute;
+  left: 30%;
+  text-align: center;
+  top: 18%;
+  width: 38%;
+}
+#kingdice
+{
+  height: 50%;
+  left: 68%;
+  position: absolute;
+  top: 30%;
 }
 #line_static
 {
-  background-color: lightgrey;
-  height: 595px;
-  width: 2px;
-  top: 0px;
-  left: 20px;
+  background-color: #a7adb1;
+  height: 600px;
+  left: 5%;
   opacity: 0.1;
   position: absolute;
+  top: 0px;
+  width: 2px;
 }
 #line_static2
 {
-  background-color: lightgrey;
-  height: 595px;
-  width: 2px;
-  top: 0px;
-  left: 100px;
+  background-color: #a7adb1;
+  height: 600px;
+  left: 20%;
   opacity: 0.1;
   position: absolute;
+  top: 0px;
+  width: 2px;
 }
+#letters
+{
+  height: 25%;
+  left: 36%;
+  margin: 3%;
+  position: absolute;
+  top: 68.25%;
+  width: 25%;
+}
+#letters a
+{
+  background-color: #957252;
+  border-radius: 35px;
+  color: #8a3d43;
+  cursor: pointer;
+  float: left;
+  font-size: 18px;
+  padding: 3%;
+}
+#letters a:hover
+{
+  color: #000000;
+}
+#letters a .d
+{
+  color: yellow;
+  text-decoration: underline;
+}
+#scroll
+{
+  height: 100%;
+  left: 20%;
+  position: absolute;
+  top: 5%;
+  width: 60%;
+}
+#scroll_container
+{
+  font-family: 'Crafty Girls', cursive;
+  margin: auto;
+  overflow: hidden;
+}
+/* Large desktop */
+@media (min-width: 1200px)
+{
+
+}
+/* Portrait tablet to landscape and desktop */
+ @media (min-width: 770px) and (max-width: 1280px)
+{
+  #chance
+  {
+    left: 27%;
+    top: 74%;
+  }
+  #clock_time
+  {
+    font-size: 18px;
+    left: 10%;
+    top: 17%;
+  }
+  #howToWords
+  {
+    left: 30%;
+    width: 45%;
+  }
+  #scroll
+  {
+    left: 15%;
+    width: 75%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 769px)
+{
+  #clock_face
+  {
+     border: 2px solid black;
+     height: 13%;
+     left: 86%;
+     top: 9.25%;
+     width: 10%;
+  }
+  #clock_time
+  {
+    font-size: 16px;
+  }
+  #clock_skin
+  {
+     height: 15%;
+     left: 84.75%;
+     top: 8%;
+     width: 12%;
+  }
+  #cuphead
+  {
+    height: 16%;
+    left: 14%;
+    top: 65%;
+  }
+  #howTo
+  {
+    font-size: 50px;
+    margin: auto;
+    width: 100%;
+  }
+  #howToWords
+  {
+    left: 27%;
+    top: 25%;
+    width: 47%;
+  }
+  #kingdice
+  {
+    height: 40%;
+    left: 70%;
+    top: 40%;
+  }
+  #letters
+  {
+    left: 35%;
+    top: 70%;
+    width: 26%;
+  }
+  #scroll
+  {
+    left: 10%;
+    width: 80%;
+  }
+}
+/* Landscape phones and down */
+@media screen and (max-width: 480px)
+{
+  #chance
+  {
+    height: 25px;
+    left: 22%;
+    top: 72%;
+    width: 25px;
+  }
+  #clock_face
+  {
+     border: 2px solid black;
+     height: 13%;
+     left: 79%;
+     top: 6.25%;
+     width: 15%;
+  }
+  #clock_skin
+  {
+     height: 15%;
+     left: 77%;
+     top: 5%;
+     width: 18%;
+  }
+  #clock_stem
+  {
+     left: 86%;
+     top: 3%;
+  }
+  #clock_top
+  {
+     left: 85%;
+     top: 2%;
+  }
+  #coin
+  {
+    height: 20px;
+    width: 20px;
+  }
+  #cuphead
+  {
+    height: 12%;
+    left: 10%;
+    top: 65%;
+  }
+  #header
+  {
+    left: 15%;
+    top: 1%;
+    width: 50%;
+  }
+  #howTo
+  {
+    font-size: 40px;
+    margin: auto;
+    width: 100%;
+  }
+  #howToWords
+  {
+    font-size: 14px;
+    left: 25%;
+    top: 27%;
+    width: 55%;
+  }
+  #kingdice
+  {
+    height: 30%;
+    left: 65%;
+    top: 48%;
+  }
+  #letters
+  {
+    left: 36%;
+    top: 71%;
+    width: 26%;
+  }
+  #letters a
+  {
+    font-size: 16px;
+  }
+  #scroll
+  {
+    height: 100%;
+    left: 10%;
+    top: 5%;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 320px)
+{
+  #clock_face
+  {
+     border: 2px solid black;
+     height: 13%;
+     left: 79%;
+     top: 5.25%;
+     width: 15%;
+  }
+  #clock_time
+  {
+    font-size: 14px;
+    left: 10%;
+    top: 17%;
+  }
+  #clock_skin
+  {
+     height: 15%;
+     left: 77%;
+     top: 4%;
+     width: 18%;
+  }
+  #clock_stem
+  {
+     left: 86%;
+     top: 2%;
+  }
+  #clock_top
+  {
+     left: 85%;
+     top: 1%;
+  }
+  #cuphead
+  {
+    height: 10%;
+    left: 8%;
+    top: 67%;
+  }
+  #header
+  {
+    left: 10%;
+    top: 2%;
+    width: 65%;
+  }
+  #howTo
+  {
+    font-size: 30px;
+    margin: auto;
+    width: 100%;
+  }
+  #howToWords
+  {
+    font-size: 14px;
+    left: 22%;
+    top: 27%;
+    width: 60%;
+  }
+  #kingdice
+  {
+    height: 25%;
+    left: 67%;
+    top: 52%;
+  }
+  #letters
+  {
+    left: 36%;
+    top: 72%;
+    width: 26%;
+  }
+  #scroll
+  {
+    height: 95%;
+    left: 5%;
+    top: 5%;
+    width: 95%;
+  }
+}
+
+/*DO Last*/
 #splat
 {
   top: 15px;
@@ -104,123 +484,9 @@
   opacity: .75;
   position: absolute;
 }
-#coin
-{
-  top: 0px;
-  left: 0px;
-  position: absolute;
-}
-#scroll
-{
-  top: -155px;
-  left: 100px;
-  position: absolute;
-}
-#chance
-{
-  height: 35px;
-  width: 35px;
-  background-color: #f7d847;
-  border: 3px solid #867531;
-  border-radius: 45px;
-  top: 475px;
-  left: 345px;
-  position: absolute;
-  cursor: pointer;
-}
-#chance:hover
-{
-  background-color: #867531;
-}
-#clock_top
-{
-   width: 50px;
-   height: 10px;
-   top: 25px;
-   left: 1213.5px;
-   background-color: gold;
-   position: absolute;
-   border-radius: 35px 35px 25px 25px;
-   border: 2px solid black;
-}
-#clock_stem
-{
-   width: 20px;
-   height: 30px;
-   top: 25px;
-   left: 1228.5px;
-   background-color: chocolate;
-   position: absolute;
-   border-radius: 25px;
-   border: 2px solid black;
-}
-#clock_skin
-{
-   width: 125px;
-   height: 125px;
-   top: 50px;
-   left: 1175px;
-   background-color: chocolate;
-   position: absolute;
-   border-radius: 135px;
-   border: 3px solid black;
-}
-#clock_face
-{
-   width: 100px;
-   height: 100px;
-   top: 62.5px;
-   left: 1187.5px;
-   background-color: wheat;
-   position: absolute;
-   border-radius: 135px;
-   border: 4px solid black;
-}
-#clock_time
-{
-  font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
-  top: 10.5px;
-  left: 16px;
-  position: absolute;
-}
-#clock_over
-{
-  font-size: 11px;
-  font-family: 'Press Start 2P', cursive;
-  top: 30px;
-  left: 6.5px;
-  position: absolute;
-  visibility: hidden;
-}
-#letters
-{
-  height: 150px;
-  width: 350px;
-  top: 435px;
-  left: 500px;
-  margin: 10px;
-  position: absolute;
-}
-#letters a
-{
-  border-radius: 35px;
-  padding: 10px;
-  font-size: 20px;
-  line-height: 50px;
-  color: #8a3d43;
-  background-color: #957252;
-  cursor: pointer;
-}
-#letters a:hover
-{
-  color: #000000;
-}
-#letters a .d
-{
-  color: yellow;
-  text-decoration: underline;
-}
+
+
+
 #chance_results
 {
   font-size: 25px;
@@ -238,14 +504,4 @@
   left: 500px;
   position: absolute;
   font-family: 'Indie Flower', cursive;
-}
-#animation_static1
-{
-  background-color: wheat;
-  height: 600px;
-  width: 2px;
-  top: 0px;
-  left: 0px;
-  opacity: 0.1;
-  position: absolute;
 }
