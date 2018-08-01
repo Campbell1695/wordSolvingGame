@@ -190,6 +190,41 @@
   margin: auto;
   overflow: hidden;
 }
+#splat
+{
+  position: absolute;
+  rotation: 180deg;
+}
+#splat2
+{
+  position: absolute;
+  rotation: 180deg;
+}
+#splat3
+{
+  opacity: .75;
+  position: absolute;
+}
+#stroke
+{
+  opacity: .25;
+  position: absolute;
+}
+#stroke2
+{
+  opacity: .75;
+  position: absolute;
+}
+#WORD
+{
+  color: #ffffff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+  left: 38%;
+  position: absolute;
+  top: 58%;
+}
+
 /* Large desktop */
 @media (min-width: 1200px)
 {
@@ -218,6 +253,12 @@
   {
     left: 15%;
     width: 75%;
+  }
+  #WORD
+  {
+    font-size: 40px;
+    left: 36%;
+    top: 55%;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -276,6 +317,12 @@
   {
     left: 10%;
     width: 80%;
+  }
+  #WORD
+  {
+    font-size: 35px;
+    left: 28%;
+    top: 52%;
   }
 }
 /* Landscape phones and down */
@@ -366,6 +413,12 @@
     top: 5%;
     width: 85%;
   }
+  #WORD
+  {
+    font-size: 30px;
+    left: 24%;
+    top: 40%;
+  }
 }
 @media screen and (max-width: 320px)
 {
@@ -444,49 +497,13 @@
     top: 5%;
     width: 95%;
   }
+  #WORD
+  {
+    left: 20%;
+  }
 }
 
 /*DO Last*/
-#splat
-{
-  top: 15px;
-  left: 100px;
-  opacity: .25;
-  rotation: 180deg;
-  position: absolute;
-}
-#splat2
-{
-  top: 15px;
-  left: 100px;
-  opacity: .25;
-  rotation: 180deg;
-  position: absolute;
-}
-#splat3
-{
-  top: 15px;
-  left: 100px;
-  opacity: .75;
-  position: absolute;
-}
-#stroke
-{
-  top: 15px;
-  left: 100px;
-  opacity: .25;
-  position: absolute;
-}
-#stroke2
-{
-  top: 15px;
-  left: 100px;
-  opacity: .75;
-  position: absolute;
-}
-
-
-
 #chance_results
 {
   font-size: 25px;
@@ -495,13 +512,4 @@
   left: 6.5px;
   position: absolute;
   visibility: hidden;
-}
-#WORD
-{
-  color: #ffffff;
-  font-size: 75px;
-  top: 275px;
-  left: 500px;
-  position: absolute;
-  font-family: 'Indie Flower', cursive;
 }

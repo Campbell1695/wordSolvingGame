@@ -9,7 +9,7 @@ main.wordU = "";
 
 main.pullword = function()
 {
-  main.word = words.List[(Math.floor(Math.random()*main.numInWordBank))];
+  main.word = words.List[5];
 }
 
 main.setUnderline = function()
